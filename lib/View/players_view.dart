@@ -29,7 +29,7 @@ class _PlayersViewState extends State<PlayersView> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Players".toUpperCase(),
+          "PLAYERS",
           style: GoogleFonts.exo(
             fontSize: 30,
             fontWeight: FontWeight.bold,
@@ -37,17 +37,17 @@ class _PlayersViewState extends State<PlayersView> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.orange,
+        backgroundColor: Color(0xFF1976D2),
       ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xffF4AF23),
-              Color(0xffF37F30),
+              const Color(0xFF1976D2),
+              const Color(0xFF448AFF),
             ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
         ),
         child: GetBuilder<PlayersController>(builder: (controller) {

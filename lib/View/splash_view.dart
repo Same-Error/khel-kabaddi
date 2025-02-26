@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 
 import '../View/dashboard_view.dart';
 
@@ -27,9 +28,8 @@ class _SplashViewState extends State<SplashView> {
       body: SizedBox(
         height: double.infinity,
         width: double.infinity,
-        child: Image.asset(
-          'assets/splashimage.jpg',
-          fit: BoxFit.cover,
+        child: Lottie.asset(
+          'assets/splash.json',
         ),
       ),
     );

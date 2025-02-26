@@ -38,19 +38,18 @@ class _PhotosViewState extends State<PhotosView> {
             color: Colors.white,
           ),
         ),
-        backgroundColor: Colors.orange,
+        backgroundColor: Color(0xffF37F30),
         centerTitle: true,
       ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xffF4AF23),
               Color(0xffF37F30),
-              Color(0xffFEA55E),
+              Color(0xffF4AF23),
             ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
         ),
         child: GetBuilder<PhotosAlbumController>(builder: (controller) {

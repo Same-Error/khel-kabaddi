@@ -14,14 +14,14 @@ class _DashboardViewState extends State<DashboardView> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      initialIndex: 1,
+      initialIndex: 0,
       length: 3,
       child: Scaffold(
         body: TabBarView(
           physics: NeverScrollableScrollPhysics(),
           children: [
-            PhotosSeasonsView(),
             PlayersView(),
+            PhotosSeasonsView(),
             VideoSeasonsView(),
           ],
         ),
@@ -29,11 +29,11 @@ class _DashboardViewState extends State<DashboardView> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.amberAccent,
-                Colors.amber.shade700,
+                Colors.blueAccent,
+                Colors.blue.shade700,
               ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
           ),
           child: TabBar(
@@ -42,12 +42,12 @@ class _DashboardViewState extends State<DashboardView> {
             indicatorColor: Colors.white,
             tabs: [
               Tab(
-                icon: Icon(Icons.photo_album_outlined),
-                text: 'Photos',
-              ),
-              Tab(
                 icon: Icon(Icons.groups_outlined),
                 text: 'Squad',
+              ),
+              Tab(
+                icon: Icon(Icons.photo_album_outlined),
+                text: 'Photos',
               ),
               Tab(
                 icon: Icon(Icons.video_collection_outlined),

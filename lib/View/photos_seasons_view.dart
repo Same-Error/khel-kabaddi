@@ -26,7 +26,7 @@ class _SeasonsViewState extends State<PhotosSeasonsView> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Photos".toUpperCase(),
+          "PHOTOS",
           style: GoogleFonts.exo(
             fontSize: 30,
             fontWeight: FontWeight.bold,
@@ -34,18 +34,17 @@ class _SeasonsViewState extends State<PhotosSeasonsView> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.amber.shade800,
+        backgroundColor: Color(0xFF1976D2),
       ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xffF4AF23),
-              Color(0xffF37F30),
-              // Color(0xffFEA55E),
+              const Color(0xFF1976D2),
+              const Color(0xFF448AFF),
             ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
         ),
         child: GetBuilder<SeasonsController>(builder: (controller) {
